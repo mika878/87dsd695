@@ -1,28 +1,28 @@
 #!/usr/bin/env bash
 
 # 设置各变量
-UUID='de04add9-5c68-8bab-950c-08cd5320df18'
-VMESS_WSPATH='/vmess'
-VLESS_WSPATH='/vless'
-TROJAN_WSPATH='/trojan'
-SS_WSPATH='/shadowsocks'
+UUID='41257050-3338-46a3-9c13-363841e22b1a'
+VMESS_WSPATH='/hs838Whs8Kuwgw28YT282'
+VLESS_WSPATH='/hs838Whs8Kuwgw28YT283'
+TROJAN_WSPATH='/hs838Whs8Kuwgw28YT281'
+SS_WSPATH='/hs838Whs8Kuwgw28YT284'
 NEZHA_SERVER="probe.nezha.org"
 NEZHA_PORT=5555
 NEZHA_KEY="p2RYaBPrCEiFro7W0Y"
 
 generate_config() {
-  cat > config.json << EOF
+  cat &gt; config.json &lt;&lt; EOF
 {
     "log": {
         "access": "/dev/null",
         "error": "/dev/null",
-        "loglevel": "none"
+        "loglevel": "None"
     },
     "inbounds": [
         {
             "port": 8080,
             "protocol": "vless",
-            "settings": {
+            "Settings": {
                 "clients": [
                     {
                         "id": "${UUID}",
